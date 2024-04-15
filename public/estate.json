@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Luxury Beachfront Villa",
+    "segment_name": "Villa",
+    "description": "Stunning beachfront villa with breathtaking ocean views.",
+    "price": 126000000,
+    "status": "sales",
+    "area": "5000 sq ft",
+    "location": "Cox's Bazar, Bangladesh",
+    "image": "https://i.ibb.co/f2f9dw6/r-architecture-2g-Dwl-Iim3-Uw-unsplash.jpg",
+    "facilities": ["Swimming Pool", "Private Beach Access", "Gym", "Spa"]
+  },
+  {
+    "id": 2,
+    "estate_title": "City Center Penthouse",
+    "segment_name": "Penthouse",
+    "description": "Modern penthouse apartment in the heart of downtown.",
+    "price": 100800000,
+    "status": "sales",
+    "area": "3229 sq ft",
+    "location": "Dhaka, Bangladesh",
+    "image": "https://i.ibb.co/bKhPXJL/mostafa-safadel-c-Hj-Axn-Jk-w-Q-unsplash.jpg",
+    "facilities": ["Concierge Service", "Fitness Center", "Rooftop Terrace"]
+  },
+  {
+    "id": 3,
+    "estate_title": "Mountain View Chalet",
+    "segment_name": "Chalet",
+    "description": "Cozy chalet nestled in the mountains with panoramic views.",
+    "price": 67200000,
+    "status": "sales",
+    "area": "2691 sq ft",
+    "location": "Bandarban, Bangladesh",
+    "image": "https://i.ibb.co/J2y3ChL/andrea-davis-IWfe63th-Jxk-unsplash.jpg",
+    "facilities": ["Fireplace", "Ski-in/Ski-out Access", "Hot Tub"]
+  },
+  {
+    "id": 4,
+    "estate_title": "Seaside Cottage",
+    "segment_name": "Cottage",
+    "description": "Quaint cottage overlooking the sea, perfect for a peaceful retreat.",
+    "price": 42000000,
+    "status": "sales",
+    "area": "1614 sq ft",
+    "location": "Cox's Bazar, Bangladesh",
+    "image": "https://i.ibb.co/R6yMhC4/david-tip-f-35-Q1-DMSl-M-unsplash.jpg",
+    "facilities": ["Deck", "Oceanfront View", "Garden"]
+  },
+  {
+    "id": 5,
+    "estate_title": "Urban Loft",
+    "segment_name": "Apartment",
+    "description": "Chic loft apartment with industrial design elements.",
+    "price": 75600000,
+    "status": "rent",
+    "area": "2153 sq ft",
+    "location": "Dhaka, Bangladesh",
+    "image": "https://i.ibb.co/VYRRzdX/deborah-cortelazzi-g-REqu-CUXQLI-unsplash.jpg",
+    "facilities": ["Open Floor Plan", "Exposed Brick Walls", "High Ceilings"]
+  },
+  {
+    "id": 6,
+    "estate_title": "Garden Retreat",
+    "segment_name": "House",
+    "description": "Tranquil house with lush garden oasis in the backyard.",
+    "price": 58800000,
+    "status": "sales",
+    "area": "1937 sq ft",
+    "location": "Chittagong, Bangladesh",
+    "image": "https://i.ibb.co/4msH84m/todd-kent-178j8t-Jr-Nlc-unsplash.jpg",
+    "facilities": ["Patio", "Greenhouse", "Outdoor Dining Area"]
+  },
+  {
+    "id": 7,
+    "estate_title": "Lakefront Mansion",
+    "segment_name": "Mansion",
+    "description": "Grand mansion overlooking a serene lake.",
+    "price": 252000000,
+    "status": "sales",
+    "area": "10764 sq ft",
+    "location": "Rangamati, Bangladesh",
+    "image": "https://i.ibb.co/QvRL1VW/bartlomiej-balicki-7ic-Yxbg-I9qk-unsplash.jpg",
+    "facilities": ["Boat Dock", "Indoor Pool", "Home Theater"]
+  },
+  {
+    "id": 8,
+    "estate_title": "Ski Chalet",
+    "segment_name": "Chalet",
+    "description": "Ski-in/ski-out chalet with panoramic mountain views.",
+    "price": 100800000,
+    "status": "rent",
+    "area": "3767 sq ft",
+    "location": "Bandarban, Bangladesh",
+    "image": "https://i.ibb.co/V3517dF/tristan-gevaux-h-Qj7x-BDrax-U-unsplash.jpg",
+    "facilities": ["Sauna", "Ski Storage", "Deck"]
+  },
+  {
+    "id": 9,
+    "estate_title": "Downtown Condo",
+    "segment_name": "Condo",
+    "description": "Modern condo in the heart of the bustling city center.",
+    "price": 50400000,
+    "status": "rent",
+    "area": "1614 sq ft",
+    "location": "Dhaka, Bangladesh",
+    "image": "https://i.ibb.co/W3RSPf5/lotus-design-n-print-Vfa35ue-UCo-unsplash.jpg",
+    "facilities": ["Balcony", "Fitness Center", "24/7 Security"]
+  }
+]
