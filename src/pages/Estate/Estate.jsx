@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Estate = ({ estate }) => {
-    const { id, image, estate_title, area, status, location } = estate;
+    const { id, estate_title, segment_name, description, price, status, area, location, image, facilities } = estate;
     return (
         <div className="card bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
