@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const Estate = ({ estate }) => {
-    const { image, estate_title, area, status, location } = estate;
+    const { id, image, estate_title, area, status, location } = estate;
     return (
         <div className="card bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
@@ -15,7 +16,9 @@ const Estate = ({ estate }) => {
                 <p>Location : {location}</p>
                 </div>
                 <div className="card-actions">
+                    <Link to={`/estate/${id}`}>
                     <button className="btn btn-primary">View Property</button>
+                    </Link>
                 </div>
             </div>
         </div>

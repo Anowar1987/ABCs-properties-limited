@@ -5,6 +5,8 @@ import Estate from "../Estate/Estate";
 const EstatesData = () => {
     const [estates, setEstates] = useState([]);
 
+    const [dataLength, setDataLength] = useState(6);
+
 
     useEffect( () => {
         fetch('estate.json')
@@ -21,8 +23,15 @@ const EstatesData = () => {
             </div>
             <div className="grid grid-cols-3 gap-6">
                 {
-                    estates.map(estate => <Estate key={estate.id} estate={estate}></Estate>)
+                    estates.slice(0, dataLength).map(estate => <Estate key={estate.id} estate={estate}></Estate>)
                 }
+            </div>
+            <div className={ dataLength === estates.length && 'hidden'}>
+            <div className="text-center mt-8">
+                <button
+                onClick={() => setDataLength(estates.length)} 
+                className="btn btn-primary">Show All</button>
+            </div>
             </div>
         </div>
     );
