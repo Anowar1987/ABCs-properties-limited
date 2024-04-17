@@ -15,7 +15,7 @@ const EstateDetails = () => {
                 <div className="border md:col-span-2">
                     <img className="h-full" src={estate.image} alt="" />
                 </div>
-                <div className="border md:col-span-2 ml-3">
+                <div className="border md:col-span-2 ml-3 p-4">
                     <p className="text-lg"><span className="font-bold">Segment :</span> {estate.segment_name}</p>
                     <h4 className="text-lg font-bold">Description :</h4>
                     <p>{estate.description}</p>
