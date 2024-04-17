@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
+
+    const handleLogin = e => {
+        e.preventDefault();
+    }
+
     return (
         <div>
             <div>
@@ -8,7 +14,7 @@ const Login = () => {
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-300">
                             <h2 className="text-3xl font-bold text-center mt-5">Please Login</h2>
-                            <form className="card-body">
+                            <form onSubmit={handleLogin} className="card-body">
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Email</span>
@@ -28,6 +34,7 @@ const Login = () => {
                                     <button className="btn btn-primary">Login</button>
                                 </div>
                             </form>
+                            <p className="text-center font-semibold mb-2">Do not have an account? <br />Please <Link className="font-bold text-blue-700" to='/register'>Register</Link></p>
                         </div>
                     </div>
                 </div>
