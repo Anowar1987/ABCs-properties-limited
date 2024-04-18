@@ -1,12 +1,29 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Register = () => {
+    const { createUser } = useContext(AuthContext);
+
     const handleRegister = e => {
         e.preventDefault();
         console.log(e.currentTarget);
         const form =new FormData(e.currentTarget);
-        console.log(form.get('name'));
+        
+        const name =form.get('name');
+        const photoURL =form.get('photoURL');
+        const email =form.get('email');
+        const password =form.get('password');
+        console.log(name, photoURL, email,password);
+
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
 
     return (
@@ -53,6 +70,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
