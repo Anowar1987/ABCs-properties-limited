@@ -1,23 +1,34 @@
 import { Link } from "react-router-dom";
 
 
-const Login = () => {
-
-    const handleLogin = e => {
+const Register = () => {
+    const handleRegister = e => {
         e.preventDefault();
         console.log(e.currentTarget);
         const form =new FormData(e.currentTarget);
-        console.log(form.get('email'));
+        console.log(form.get('name'));
     }
 
     return (
         <div>
-            <div>
+             <div>
                 <div className="hero min-h-screen">
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-300">
-                            <h2 className="text-3xl font-bold text-center mt-5">Please Login</h2>
-                            <form onSubmit={handleLogin} className="card-body">
+                            <h2 className="text-3xl font-bold text-center mt-5">Please Register</h2>
+                            <form onSubmit={handleRegister} className="card-body">
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text">Name</span>
+                                    </label>
+                                    <input type="text" placeholder="Write your name" name="name" className="input input-bordered" required />
+                                </div>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text">Photo URL</span>
+                                    </label>
+                                    <input type="text" placeholder="Write your photo URL" name="PhotoUrl" className="input input-bordered" required />
+                                </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Email</span>
@@ -37,7 +48,7 @@ const Login = () => {
                                     <button className="btn btn-primary">Login</button>
                                 </div>
                             </form>
-                            <p className="text-center font-semibold mb-2">Do not have an account? <br />Please <Link className="font-bold text-blue-700" to='/register'>Register</Link></p>
+                            <p className="text-center font-semibold mb-2">Already have an account? <br />Please <Link className="font-bold text-blue-700" to='/login'>Login</Link></p>
                         </div>
                     </div>
                 </div>
@@ -46,4 +57,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
